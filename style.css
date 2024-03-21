@@ -1,0 +1,155 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(15, 15, 43);
+}
+
+body, button, input {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  line-height: 2rem;
+}
+
+.invisiblle {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.card{
+
+  border-radius: .6rem;
+  background-color: white;
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin-inline: auto;
+  max-width: 42.8;
+}
+
+form {
+  width: 30rem;
+}
+
+.tittle {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+  color: rgb(113, 113, 192);;
+}
+
+.input-wrapper + .input-wrapper {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 1.6rem;
+
+  color: #36245f;
+  background: #DCE2E9;
+
+  border: 0;
+  border-radius: .4rem;
+}
+
+input:focus {
+  outline: 2px solid rgb(113, 113, 192);;
+}
+
+#subimit {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 1.6rem;
+
+  border: 0;
+  border-radius: .4rem;
+
+  color: white;
+  background-color: rgb(113, 113, 192);
+  cursor: pointer;
+  transition: background .3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+
+#subimit:hover {
+  background-color: rgb(78, 78, 146)
+}
+
+.modal-wrapper {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.modal {
+  position: relative;
+}
+
+.modal h2 {
+  margin: 0;
+}
+
+.modal button {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.modal button:hover {
+  transform: scale(1.1);
+}
+
+.alert-error.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.alert-error {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.8rem 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: transform .5s;
+}
+  
