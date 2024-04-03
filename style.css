@@ -129,27 +129,27 @@ input:focus {
   transform: scale(1.1);
 }
 
-.alert-error.open {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .alert-error {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-
+  
   background-color: red;
   color: white;
   font-weight: bold;
   text-align: center;
   padding: 0.8rem 0;
-
+  
   visibility: hidden;
   opacity: 0;
   transform: translateY(-3rem);
   transition: transform .5s;
 }
-  
+
+.alert-error.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
